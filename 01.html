@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="box">
+    <li>这是第1个li标签</li>
+    <li>这是第2个li标签</li>
+    <li>这是第3个li标签</li>
+    <li>这是第4个li标签</li>
+    <li>这是第5个li标签</li>
+</ul>
+<script>
+
+    var box = document.getElementById("box");
+    var neo = document.getElementById("box").children[0];
+    var newneo = neo.cloneNode(true);
+    box.appendChild(newneo)
+    // console.log(newneo)
+
+
+</script>
+</body>
+</html>
